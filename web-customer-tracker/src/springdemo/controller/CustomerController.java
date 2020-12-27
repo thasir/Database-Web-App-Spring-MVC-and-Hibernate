@@ -27,6 +27,11 @@ public class CustomerController {
 		// add customer to the model
 		theModel.addAttribute("customers", theCustomers);
 		return "list-customers";
+	}
+
+	@GetMapping("/showFormForAdd")
+	public String showFormForAdd(Model theModel) {
+		return "customer-form";
 
 	}
 }
